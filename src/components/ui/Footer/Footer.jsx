@@ -32,10 +32,12 @@ const Footer = ({ width = "100%", height = "auto" }) => {
     {
       title: 'Mi Cuenta',
       items: ['Ingresa o regístrate', 'Pedidos', 'Descargas', 'Direcciones'],
+      hidden: true, // Marca como oculto
     },
     {
       title: 'Sobre Nosotros',
       items: ['Quiénes somos', 'Tiendas', 'Blog'],
+      hidden: true, // Marca como oculto
     },
     {
       title: 'Contáctanos',
@@ -72,7 +74,7 @@ const Footer = ({ width = "100%", height = "auto" }) => {
             key={index}
             sx={{
               textAlign: 'left',
-              display: (index === 2 || index === 3) ? { sm: 'none', lg: 'block' } : 'block' 
+              display: (index === 2 || index === 3) ? { xs: 'none', sm: 'block' } : 'block' // Oculta en pantallas pequeñas
             }}
           >
             {column.title && (
@@ -86,7 +88,6 @@ const Footer = ({ width = "100%", height = "auto" }) => {
                   textDecoration: 'underline',
                   textDecorationColor: '#EB00D3',
                   marginBottom: '18px',
-             
                 }}
               >
                 {column.title}
