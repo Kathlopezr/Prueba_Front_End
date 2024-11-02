@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { Menu, MenuItem, IconButton } from '@mui/material';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
-const Header_pink = ({ title, width = "100%", height = "auto" }) => {
+const HeaderPink = ({ title, width = "100%", height = "auto" }) => {
   const buttonLabels = [
     'SHOP ALL',
     'BEST SELLER',
@@ -118,4 +118,4 @@ const Header_pink = ({ title, width = "100%", height = "auto" }) => {
   );
 };
 
-export default Header_pink;
+export default HeaderPink;

@@ -10,7 +10,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const Header_black = ({ children, width = "100%", height = "auto", backgroundColor = "black" }) => {
+const HeaderBlack = ({ children, width = "100%", height = "auto", backgroundColor = "black" }) => {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenuClick = (event) => {
@@ -108,4 +108,4 @@ const Header_black = ({ children, width = "100%", height = "auto", backgroundCol
   );
 };
 
-export default Header_black;
+export default HeaderBlack;
