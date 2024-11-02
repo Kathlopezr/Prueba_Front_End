@@ -83,7 +83,6 @@ const Header_pink = ({ title, width = "100%", height = "auto" }) => {
           ))}
         </Box>
 
-        {/* Menú y iconos en la parte derecha */}
         <Box
           sx={{
             position: 'absolute',

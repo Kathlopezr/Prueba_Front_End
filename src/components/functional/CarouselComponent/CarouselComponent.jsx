@@ -73,7 +73,7 @@ const SampleNextArrow = ({ onClick }) => (
     onClick={onClick}
     sx={{
       position: 'absolute',
-      top: '50%',
+      top: '30%',
       right: '-80px',
       transform: 'translateY(-50%)',
       zIndex: 1,
@@ -98,7 +98,7 @@ const SamplePrevArrow = ({ onClick }) => (
     onClick={onClick}
     sx={{
       position: 'absolute',
-      top: '50%',
+      top: '30%',
       left: '-80px',
       transform: 'translateY(-50%)',
       zIndex: 1,

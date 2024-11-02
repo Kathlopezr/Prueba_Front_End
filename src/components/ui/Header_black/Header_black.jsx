@@ -24,15 +24,17 @@ const Header_black = ({ children, width = "100%", height = "auto", backgroundCol
   return (
     <Box
       sx={{
-        width,
-        height,
+        width: '100%', 
+        height: '43px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         padding: '10px',
         backgroundColor,
         boxSizing: 'border-box',
-        position: 'relative',
+        position: 'sticky', 
+        top: 0, 
+        zIndex: 1000, 
       }}
     >
       <Typography variant="body2" align="center" sx={{ fontSize: '15px', color: 'white', fontFamily: 'outfit', fontWeight: '400' }}>
