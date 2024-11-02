@@ -12,26 +12,26 @@ const CarouselComponent = ({ product }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, 
+    slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
     responsive: [
       {
         breakpoint: 1600,
-        settings: { slidesToShow: 3, slidesToScroll: 1 }, 
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 1200,
-        settings: { slidesToShow: 3, slidesToScroll: 1 }, 
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 900,
-        settings: { slidesToShow: 2, slidesToScroll: 1 }, 
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 600,
-        settings: { slidesToShow: 1, slidesToScroll: 1 }, 
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
       },
     ],
   };
@@ -45,20 +45,20 @@ const CarouselComponent = ({ product }) => {
       <Box
         sx={{
           position: 'relative',
-          width: '75%', 
+          width: '75%',
           maxWidth: '1600px',
           marginBottom: '20px',
         }}
       >
         <Slider {...settings}>
           {products.map((_, index) => (
-            <Box key={index} sx={{ padding: '0 10px' }}> 
+            <Box key={index} sx={{ padding: '0 10px' }}>
               <CustomCard
                 imageUrl="/image_3.png"
                 brandName="Brand"
                 productName="Shaker Brand 400 cc"
-                currentPrice="$7.990"
-                previousPrice="$9.990"
+                currentPrice="7.990"
+                previousPrice="9.990"
               />
             </Box>
           ))}
@@ -73,8 +73,8 @@ const SampleNextArrow = ({ onClick }) => (
     onClick={onClick}
     sx={{
       position: 'absolute',
-      top: '30%',
-      right: '-80px',
+      top: '30%', // Mantener el botón centrado verticalmente
+      right: { xs: '10px', sm: '-80px' }, // Alineación en pantallas pequeñas
       transform: 'translateY(-50%)',
       zIndex: 1,
       borderRadius: '50%',
@@ -98,8 +98,8 @@ const SamplePrevArrow = ({ onClick }) => (
     onClick={onClick}
     sx={{
       position: 'absolute',
-      top: '30%',
-      left: '-80px',
+      top: '30%', // Mantener el botón centrado verticalmente
+      left: { xs: '10px', sm: '-80px' }, // Alineación en pantallas pequeñas
       transform: 'translateY(-50%)',
       zIndex: 1,
       padding: '10px',
